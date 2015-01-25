@@ -1,0 +1,7855 @@
+ship = Provisional Shipyard
+version = 0.24.2
+description = Builds the main shipyard, then is recycled into RocketParts. Uses an unusual structural-fairing booster (translation: don't unlock the fairings!)
+type = VAB
+PART
+{
+	part = probeStackLarge_4291469270
+	partName = Part
+	pos = -7.629395E-06,22.9671,-4.768372E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = OrbitalRocketWorkshop_4291469228
+	link = ExWorkshop_4291468772
+	link = Kosmos.Strut.Connector_4291468712
+	link = Kosmos.Strut.Connector_4291468644
+	link = Kosmos.Strut.Connector_4291468576
+	link = Kosmos.Strut.Connector_4291468508
+	link = Kosmos.Strut.Connector_4291468440
+	link = Kosmos.Strut.Connector_4291468372
+	attN = bottom,ExWorkshop_4291468772
+	attN = top,OrbitalRocketWorkshop_4291469228
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 2.5
+		currentScale = 2.5
+		defaultScale = 2.5
+		isFreeScale = False
+		version = 1.37.0.0
+		defaultTransformScale = (1, 1, 1)
+		dryCost = 2000
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExWorkshop
+		isEnabled = True
+		EVENTS
+		{
+			ExDiscoverWorkshops
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Surfaced
+		{
+		}
+		Flew
+		{
+		}
+		FlewBy
+		{
+		}
+		Orbited
+		{
+		}
+		SubOrbited
+		{
+		}
+	}
+	MODULE
+	{
+		name = FNModuleRadiation
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 30
+		maxAmount = 30
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = OrbitalRocketWorkshop_4291469228
+	partName = Part
+	pos = -7.629395E-06,24.5771,-4.768372E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	attN = bottom,probeStackLarge_4291469270
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExLaunchPad
+		isEnabled = True
+		PadName = 
+		flagname = 
+		baseMass = 1.25
+		state = Idle
+		paused = False
+		EVENTS
+		{
+			ExDiscoverWorkshops
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			HideUI
+			{
+				active = False
+				guiActive = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = False
+				guiActive = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = ToggleFlag
+				guiName = ToggleFlag
+				category = ToggleFlag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExWorkshop
+		isEnabled = True
+		EVENTS
+		{
+			ExDiscoverWorkshops
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_Converter
+		isEnabled = True
+		converterEnabled = False
+		lastUpdateTime = 0
+		EVENTS
+		{
+			ActivateConverter
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Activate Converter
+				guiName = Activate RocketParts Conversion
+				category = Activate Converter
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeactivateConverter
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Deactivate Converter
+				guiName = Deactivate RocketParts Conversion
+				category = Deactivate Converter
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleConverter
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = USI_Converter
+		isEnabled = True
+		converterEnabled = False
+		lastUpdateTime = 0
+		EVENTS
+		{
+			ActivateConverter
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Activate Converter
+				guiName = Activate Reprocess ScrapMetal
+				category = Activate Converter
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeactivateConverter
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Deactivate Converter
+				guiName = Deactivate Reprocess ScrapMetal
+				category = Deactivate Converter
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleConverter
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = RasterPropMonitorComputer
+		isEnabled = True
+		data = 
+		vesselDescription = Builds the main shipyard, then is recycled into RocketParts. Uses an unusual structural-fairing booster (translation: don't unlock the fairings!)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = SCANsat
+		isEnabled = True
+		scanning = False
+		EVENTS
+		{
+			startScan
+			{
+				active = True
+				guiActive = True
+				guiIcon = Start RADAR Scan
+				guiName = Open Map
+				category = Start RADAR Scan
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			stopScan
+			{
+				active = True
+				guiActive = True
+				guiIcon = Stop RADAR Scan
+				guiName = Close Map
+				category = Stop RADAR Scan
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			analyze
+			{
+				active = False
+				guiActive = True
+				guiIcon = Analyze Data
+				guiName = Analyze Data
+				category = Analyze Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			reviewEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EVACollect
+			{
+				active = False
+				guiActive = False
+				guiIcon = Collect Stored Data
+				guiName = Collect Stored Data
+				category = Collect Stored Data
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			editorExtend
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Extend
+				guiName = Extend
+				category = Extend
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			editorRetract
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Retract
+				guiName = Retract
+				category = Retract
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			startScanAction
+			{
+				actionGroup = None
+			}
+			stopScanAction
+			{
+				actionGroup = None
+			}
+			toggleScanAction
+			{
+				actionGroup = None
+			}
+			analyzeData
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+	}
+	MODULE
+	{
+		name = JSINonTransparentPod
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FNModuleRadiation
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Metal
+		amount = 0
+		maxAmount = 500
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = ScrapMetal
+		amount = 0
+		maxAmount = 2000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = RocketParts
+		amount = 0
+		maxAmount = 10000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 5000
+		maxAmount = 5000
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = ExWorkshop_4291468772
+	partName = Part
+	pos = -7.629395E-06,19.0271,-4.768372E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = asasmodule1-2_4291468304
+	attN = top,probeStackLarge_4291469270
+	attN = bottom,asasmodule1-2_4291468304
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ExWorkshop
+		isEnabled = True
+		EVENTS
+		{
+			ExDiscoverWorkshops
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_Converter
+		isEnabled = True
+		converterEnabled = False
+		lastUpdateTime = 0
+		EVENTS
+		{
+			ActivateConverter
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Activate Converter
+				guiName = Activate RocketParts Conversion
+				category = Activate Converter
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeactivateConverter
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Deactivate Converter
+				guiName = Deactivate RocketParts Conversion
+				category = Deactivate Converter
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleConverter
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Surfaced
+		{
+		}
+		Flew
+		{
+		}
+		FlewBy
+		{
+		}
+		Orbited
+		{
+		}
+		SubOrbited
+		{
+		}
+	}
+	MODULE
+	{
+		name = FNModuleRadiation
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = RocketParts
+		amount = 0
+		maxAmount = 1600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = ScrapMetal
+		amount = 0
+		maxAmount = 2000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291468712
+	partName = StrutConnector
+	pos = -1.23032,22.9671,-4.035052E-07
+	rot = 0,0,0,-1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.8780792,0.1357536,0.003373961; dir: -0.9882519,0.1527866,0.003797292
+	sym = Kosmos.Strut.Connector_4291468644
+	sym = Kosmos.Strut.Connector_4291468576
+	sym = Kosmos.Strut.Connector_4291468508
+	sym = Kosmos.Strut.Connector_4291468440
+	sym = Kosmos.Strut.Connector_4291468372
+	srfN = srfAttach,probeStackLarge_4291469270
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291468644
+	partName = StrutConnector
+	pos = -0.615164,22.9671,1.065481
+	rot = 0,-0.5,0,-0.8660254
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.9534371,0.1474037,0.003663629; dir: -0.9882519,0.1527866,0.003797292
+	sym = Kosmos.Strut.Connector_4291468712
+	sym = Kosmos.Strut.Connector_4291468576
+	sym = Kosmos.Strut.Connector_4291468508
+	sym = Kosmos.Strut.Connector_4291468440
+	sym = Kosmos.Strut.Connector_4291468372
+	srfN = srfAttach,probeStackLarge_4291469270
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291468576
+	partName = StrutConnector
+	pos = 0.615149,22.9671,1.065481
+	rot = 0,-0.8660254,0,-0.5
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.9514762,0.1471004,0.00365606; dir: -0.9882519,0.1527866,0.003797292
+	sym = Kosmos.Strut.Connector_4291468712
+	sym = Kosmos.Strut.Connector_4291468644
+	sym = Kosmos.Strut.Connector_4291468508
+	sym = Kosmos.Strut.Connector_4291468440
+	sym = Kosmos.Strut.Connector_4291468372
+	srfN = srfAttach,probeStackLarge_4291469270
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291468508
+	partName = StrutConnector
+	pos = 1.230306,22.9671,-6.577271E-07
+	rot = 0,-1,0,4.371139E-08
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.8780788,0.1357536,0.003373959; dir: -0.9882519,0.1527866,0.003797292
+	sym = Kosmos.Strut.Connector_4291468712
+	sym = Kosmos.Strut.Connector_4291468644
+	sym = Kosmos.Strut.Connector_4291468576
+	sym = Kosmos.Strut.Connector_4291468440
+	sym = Kosmos.Strut.Connector_4291468372
+	srfN = srfAttach,probeStackLarge_4291469270
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291468440
+	partName = StrutConnector
+	pos = 0.6151488,22.9671,-1.065482
+	rot = 0,-0.8660254,0,0.5000001
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.9534379,0.1474037,0.003663331; dir: -0.9882519,0.1527866,0.003797292
+	sym = Kosmos.Strut.Connector_4291468712
+	sym = Kosmos.Strut.Connector_4291468644
+	sym = Kosmos.Strut.Connector_4291468576
+	sym = Kosmos.Strut.Connector_4291468508
+	sym = Kosmos.Strut.Connector_4291468372
+	srfN = srfAttach,probeStackLarge_4291469270
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291468372
+	partName = StrutConnector
+	pos = -0.615164,22.9671,-1.065482
+	rot = 0,-0.5000001,0,0.8660254
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.9514755,0.1471004,0.00365603; dir: -0.9882519,0.1527866,0.003797292
+	sym = Kosmos.Strut.Connector_4291468712
+	sym = Kosmos.Strut.Connector_4291468644
+	sym = Kosmos.Strut.Connector_4291468576
+	sym = Kosmos.Strut.Connector_4291468508
+	sym = Kosmos.Strut.Connector_4291468440
+	srfN = srfAttach,probeStackLarge_4291469270
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = asasmodule1-2_4291468304
+	partName = Part
+	pos = -7.629395E-06,15.0271,-4.768372E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = utilityCabin_4291468274
+	attN = top,ExWorkshop_4291468772
+	attN = bottom,utilityCabin_4291468274
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 2.5
+		currentScale = 2.5
+		defaultScale = 2.5
+		isFreeScale = False
+		version = 1.37.0.0
+		defaultTransformScale = (1, 1, 1)
+		dryCost = 2100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = utilityCabin_4291468274
+	partName = Part
+	pos = -7.629395E-06,13.9071,-4.768372E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = OKS.Storage.RocketParts_4291468212
+	link = mumech.MJ2.AR202_4291464066
+	link = Kosmos.Strut.Connector_4291464008
+	link = Kosmos.Strut.Connector_4291463940
+	link = Kosmos.Strut.Connector_4291463872
+	link = Kosmos.Strut.Connector_4291463804
+	link = Kosmos.Strut.Connector_4291463736
+	link = Kosmos.Strut.Connector_4291463668
+	link = Kosmos.Berthing.Node.Single.Side_4291463600
+	link = Kosmos.Berthing.Node.Single.Side_4291463386
+	attN = top,asasmodule1-2_4291468304
+	attN = bottom,OKS.Storage.RocketParts_4291468212
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceContainer
+		isEnabled = True
+		EVENTS
+		{
+			StoreDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Store Experiments (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Take Data (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Stored Data (0)
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Generator
+				guiName = Activate Generator
+				category = Activate Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = True
+				guiActive = True
+				guiIcon = Shutdown Generator
+				guiName = Shutdown Generator
+				category = Shutdown Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = RasterPropMonitorComputer
+		isEnabled = True
+		data = 
+		vesselDescription = Builds the main shipyard, then is recycled into RocketParts. Uses an unusual structural-fairing booster (translation: don't unlock the fairings!)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = SCANsat
+		isEnabled = True
+		scanning = False
+		EVENTS
+		{
+			startScan
+			{
+				active = True
+				guiActive = True
+				guiIcon = Start RADAR Scan
+				guiName = Open Map
+				category = Start RADAR Scan
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			stopScan
+			{
+				active = True
+				guiActive = True
+				guiIcon = Stop RADAR Scan
+				guiName = Close Map
+				category = Stop RADAR Scan
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			analyze
+			{
+				active = False
+				guiActive = True
+				guiIcon = Analyze Data
+				guiName = Analyze Data
+				category = Analyze Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			reviewEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EVACollect
+			{
+				active = False
+				guiActive = False
+				guiIcon = Collect Stored Data
+				guiName = Collect Stored Data
+				category = Collect Stored Data
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			editorExtend
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Extend
+				guiName = Extend
+				category = Extend
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			editorRetract
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Retract
+				guiName = Retract
+				category = Retract
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			startScanAction
+			{
+				actionGroup = None
+			}
+			stopScanAction
+			{
+				actionGroup = None
+			}
+			toggleScanAction
+			{
+				actionGroup = None
+			}
+			analyzeData
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+	}
+	MODULE
+	{
+		name = JSINonTransparentPod
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Surfaced
+		{
+		}
+		Flew
+		{
+		}
+		FlewBy
+		{
+		}
+		Orbited
+		{
+		}
+		SubOrbited
+		{
+		}
+	}
+	MODULE
+	{
+		name = FNModuleRadiation
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 600
+		maxAmount = 600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = OKS.Storage.RocketParts_4291468212
+	partName = Part
+	pos = -7.629395E-06,10.48711,-4.768372E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = dockingPortLarge_4291468104
+	attN = top,utilityCabin_4291468274
+	attN = bottom,dockingPortLarge_4291468104
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USIAnimation
+		isEnabled = True
+		isDeployed = False
+		EVENTS
+		{
+			DeployModule
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			RetractModule
+			{
+				active = False
+				guiActive = False
+				guiIcon = Retract
+				guiName = Retract
+				category = Retract
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = False
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+			ToggleScoopAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ExWorkshop
+		isEnabled = True
+		EVENTS
+		{
+			ExDiscoverWorkshops
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Surfaced
+		{
+		}
+		Flew
+		{
+		}
+		FlewBy
+		{
+		}
+		Orbited
+		{
+		}
+		SubOrbited
+		{
+		}
+	}
+	MODULE
+	{
+		name = FNModuleRadiation
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = RocketParts
+		amount = 0
+		maxAmount = 1
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = dockingPortLarge_4291468104
+	partName = Part
+	pos = -7.629395E-06,7.937105,-4.768372E-07
+	rot = 0,0,1,0
+	attRot = 0,0,0.9999999,0
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = URM.2.5.P.Fairing.Base_4291468070
+	attN = top,URM.2.5.P.Fairing.Base_4291468070
+	attN = bottom,OKS.Storage.RocketParts_4291468212
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		nodeType = size2
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAdaptiveDockingNode
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = URM.2.5.P.Fairing.Base_4291468070
+	partName = Part
+	pos = -7.629395E-06,7.547105,-4.768372E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = 0
+	sqor = 0
+	attm = 0
+	modCost = 0
+	link = Kosmos.URM.Fairing.Conic.T_4291467888
+	link = Kosmos.URM.Fairing.Conic.T_4291466426
+	link = FASAGeminiLFECentarTwin_4291464964
+	link = Kosmos.Strut.Connector_4291464474
+	link = Kosmos.Strut.Connector_4291464406
+	link = Kosmos.Strut.Connector_4291464338
+	link = Kosmos.Strut.Connector_4291464270
+	link = Kosmos.Strut.Connector_4291464202
+	link = Kosmos.Strut.Connector_4291464134
+	attN = top,dockingPortLarge_4291468104
+	attN = bottom,FASAGeminiLFECentarTwin_4291464964
+	attN = connect01,Kosmos.URM.Fairing.Conic.T_4291466426
+	attN = connect02,Kosmos.URM.Fairing.Conic.T_4291467888
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingBase
+		isEnabled = True
+		extraRadius = 0.25
+		fuelCrossFeed = False
+		autoStrutSides = True
+		extraRadius_UIFlight
+		{
+			controlEnabled = True
+			minValue = -1
+			maxValue = 2
+			stepIncrement = 0.01
+		}
+		autoStrutSides_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			ToggleCrossFeed
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle crossfeed
+				guiName = Toggle crossfeed
+				category = Toggle crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPayloadFairingModule
+		isEnabled = True
+		EVENTS
+		{
+			FairingShapeChanged
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.URM.Fairing.Conic.T_4291467888
+	partName = Part
+	pos = 1.249993,6.927105,-4.768372E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 1
+	dstg = 1
+	sidx = 0
+	sqor = 1
+	attm = 0
+	modCost = 727.5028
+	link = fuelTankHuge_4291467830
+	link = fuelTankHuge_4291467196
+	link = Kosmos.Strut.Connector_4291466562
+	link = Kosmos.Strut.Connector_4291466494
+	sym = Kosmos.URM.Fairing.Conic.T_4291466426
+	attN = connect,URM.2.5.P.Fairing.Base_4291468070
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 12
+		numSideParts = 2
+		baseRad = 1.25
+		maxRad = 2.108392
+		cylStart = 0.375
+		cylEnd = 18.38
+		topRad = 0
+		inlineHeight = 0
+		sideThickness = 0.025
+		meshPos = (-1.25, 0.6199999, 0)
+		meshRot = (0, 0, 0, 1)
+		shapeLock = True
+		shapeLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingDecoupler
+		isEnabled = True
+		ejectionPower = 0.74
+		torqueAmount = 0.1
+		decoupled = False
+		ejectionPower_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		torqueAmount_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = True
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionJettison
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARPayloadFairingModule
+		isEnabled = True
+		EVENTS
+		{
+			FairingShapeChanged
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTankHuge_4291467830
+	partName = Part
+	pos = 2.568321,6.927105,-1.318328
+	rot = 0,0.9238796,0,-0.3826834
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = fuelTankHuge_4291467766
+	link = G120_4291467504
+	link = Kosmos.Strut.Connector_4291467264
+	link = Gridfin_4291432736
+	sym = fuelTankHuge_4291466368
+	srfN = srfAttach,Kosmos.URM.Fairing.Conic.T_4291467888
+	attN = top,fuelTankHuge_4291467766
+	attN = bottom,G120_4291467504
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = ToggleFlag
+				guiName = ToggleFlag
+				category = ToggleFlag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 1440
+		maxAmount = 1440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 1760
+		maxAmount = 1760
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelTankHuge_4291467766
+	partName = Part
+	pos = 2.568321,12.52711,-1.318328
+	rot = 0,-0.9238796,0,0.3826834
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = fuelTankNormal_4291467702
+	sym = fuelTankHuge_4291466304
+	attN = top,fuelTankNormal_4291467702
+	attN = bottom,fuelTankHuge_4291467830
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = ToggleFlag
+				guiName = ToggleFlag
+				category = ToggleFlag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 1440
+		maxAmount = 1440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 1760
+		maxAmount = 1760
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelTankNormal_4291467702
+	partName = Part
+	pos = 2.568321,16.02711,-1.318328
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = HGR.noseCone_4291467608
+	link = Kosmos.Strut.Connector_4291467572
+	sym = fuelTankNormal_4291466240
+	attN = top,HGR.noseCone_4291467608
+	attN = bottom,fuelTankHuge_4291467766
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 360
+		maxAmount = 360
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 440
+		maxAmount = 440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = HGR.noseCone_4291467608
+	partName = Part
+	pos = 2.568321,16.90211,-1.318328
+	rot = 0,1,0,-2.980232E-08
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	sym = HGR.noseCone_4291466146
+	attN = bottom01,fuelTankNormal_4291467702
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291467572
+	partName = StrutConnector
+	pos = 1.801337,16.02711,-1.761147
+	rot = 0,0.2588191,0,-0.9659261
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.2442212,0.2093506,0.3338358; dir: -0.5268001,0.451584,0.7201066
+	sym = Kosmos.Strut.Connector_4291466110
+	srfN = srfAttach,fuelTankNormal_4291467702
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = G120_4291467504
+	partName = Part
+	pos = 2.568321,3.477106,-1.318328
+	rot = 0,-0.9238796,0,0.3826834
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 2
+	sidx = 9
+	sqor = 3
+	attm = 0
+	modCost = 0
+	link = FASAlaunchClamp25_4291467374
+	sym = G120_4291466042
+	attN = top,fuelTankHuge_4291467830
+	attN = bottom,FASAlaunchClamp25_4291467374
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		EVENTS
+		{
+			LockGimbal
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lock Gimbal
+				guiName = Lock Gimbal
+				category = Lock Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			FreeGimbal
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Free Gimbal
+				guiName = Free Gimbal
+				category = Free Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = FASAlaunchClamp25_4291467374
+	partName = Strut
+	pos = 2.568321,0.8027077,-1.318328
+	rot = 0,-1,0,0
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 2
+	sidx = 2
+	sqor = 3
+	attm = 0
+	modCost = 0
+	sym = FASAlaunchClamp25_4291465912
+	attN = top,G120_4291467504
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.818551
+		height = 1.783352
+		towerRot = 0,1,0,0
+		EVENTS
+		{
+			Release
+			{
+				active = False
+				guiActive = True
+				guiIcon = Release Clamp
+				guiName = Release Clamp
+				category = Release Clamp
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Generator
+				guiName = Activate Generator
+				category = Activate Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = True
+				guiActive = True
+				guiIcon = Shutdown Generator
+				guiName = Shutdown Generator
+				category = Shutdown Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291467264
+	partName = StrutConnector
+	pos = 1.810116,6.927105,-1.756078
+	rot = 0,0.258819,0,-0.9659259
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.08756916,1.231236,0.3785263; dir: -0.06782569,0.9536467,0.2931855
+	sym = Kosmos.Strut.Connector_4291465802
+	srfN = srfAttach,fuelTankHuge_4291467830
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTankHuge_4291467196
+	partName = Part
+	pos = 2.563996,6.927105,1.314004
+	rot = 0,0.9238796,0,0.3826835
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = fuelTankHuge_4291467132
+	link = G120_4291466870
+	link = Kosmos.Strut.Connector_4291466630
+	link = Gridfin_4291432342
+	sym = fuelTankHuge_4291465734
+	srfN = srfAttach,Kosmos.URM.Fairing.Conic.T_4291467888
+	attN = top,fuelTankHuge_4291467132
+	attN = bottom,G120_4291466870
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = ToggleFlag
+				guiName = ToggleFlag
+				category = ToggleFlag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 1440
+		maxAmount = 1440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 1760
+		maxAmount = 1760
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelTankHuge_4291467132
+	partName = Part
+	pos = 2.563996,12.52711,1.314004
+	rot = 0,-0.9238796,0,-0.3826834
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = fuelTankNormal_4291467068
+	sym = fuelTankHuge_4291465670
+	attN = top,fuelTankNormal_4291467068
+	attN = bottom,fuelTankHuge_4291467196
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = ToggleFlag
+				guiName = ToggleFlag
+				category = ToggleFlag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 1440
+		maxAmount = 1440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 1760
+		maxAmount = 1760
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelTankNormal_4291467068
+	partName = Part
+	pos = 2.563996,16.02711,1.314004
+	rot = 0,-1,0,-1.490116E-07
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = HGR.noseCone_4291466974
+	link = Kosmos.Strut.Connector_4291466938
+	sym = fuelTankNormal_4291465606
+	attN = top,HGR.noseCone_4291466974
+	attN = bottom,fuelTankHuge_4291467132
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 360
+		maxAmount = 360
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 440
+		maxAmount = 440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = HGR.noseCone_4291466974
+	partName = Part
+	pos = 2.563996,16.90211,1.314004
+	rot = 0,-1,0,-1.788139E-07
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	sym = HGR.noseCone_4291465512
+	attN = bottom01,fuelTankNormal_4291467068
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291466938
+	partName = StrutConnector
+	pos = 1.808556,16.02711,1.750158
+	rot = 0,0.258819,0,0.9659259
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.252476,0.1433296,-0.3288644; dir: -0.5755368,0.3267297,-0.74967
+	sym = Kosmos.Strut.Connector_4291465476
+	srfN = srfAttach,fuelTankNormal_4291467068
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = G120_4291466870
+	partName = Part
+	pos = 2.563996,3.477106,1.314004
+	rot = 0,-0.9238796,0,-0.3826834
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 2
+	sidx = 10
+	sqor = 3
+	attm = 0
+	modCost = 0
+	link = FASAlaunchClamp25_4291466740
+	sym = G120_4291465408
+	attN = top,fuelTankHuge_4291467196
+	attN = bottom,FASAlaunchClamp25_4291466740
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		EVENTS
+		{
+			LockGimbal
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lock Gimbal
+				guiName = Lock Gimbal
+				category = Lock Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			FreeGimbal
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Free Gimbal
+				guiName = Free Gimbal
+				category = Free Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = FASAlaunchClamp25_4291466740
+	partName = Strut
+	pos = 2.563996,0.8027077,1.314004
+	rot = 0,-1,0,-2.980232E-08
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 2
+	sidx = 3
+	sqor = 3
+	attm = 0
+	modCost = 0
+	sym = FASAlaunchClamp25_4291465278
+	attN = top,G120_4291466870
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.818551
+		height = 1.783352
+		towerRot = 0,1,0,-2.980232E-08
+		EVENTS
+		{
+			Release
+			{
+				active = False
+				guiActive = True
+				guiIcon = Release Clamp
+				guiName = Release Clamp
+				category = Release Clamp
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Generator
+				guiName = Activate Generator
+				category = Activate Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = True
+				guiActive = True
+				guiIcon = Shutdown Generator
+				guiName = Shutdown Generator
+				category = Shutdown Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291466630
+	partName = StrutConnector
+	pos = 1.789876,6.927105,1.760942
+	rot = 0,0.2588191,0,0.9659259
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.03800466,1.24267,-0.3805518; dir: -0.02923002,0.9557607,-0.2926893
+	sym = Kosmos.Strut.Connector_4291465168
+	srfN = srfAttach,fuelTankHuge_4291467196
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291466562
+	partName = StrutConnector
+	pos = 2.043118,8.072309,-0.4579117
+	rot = 0,0.9659259,0,-0.258819
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.06313914,-0.0008964539,-0.02117351; dir: -0.9480231,-0.01345658,-0.3179168
+	sym = Kosmos.Strut.Connector_4291465100
+	srfN = srfAttach,Kosmos.URM.Fairing.Conic.T_4291467888
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291466494
+	partName = StrutConnector
+	pos = 2.052979,8.069662,0.4636037
+	rot = 0,0.9659259,0,0.258819
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.0500249,0.004361153,0.02416606; dir: -0.897676,0.07826645,0.43365
+	sym = Kosmos.Strut.Connector_4291465032
+	srfN = srfAttach,Kosmos.URM.Fairing.Conic.T_4291467888
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.URM.Fairing.Conic.T_4291466426
+	partName = Part
+	pos = -1.250007,6.927105,-4.768372E-07
+	rot = 0,1,0,-4.371139E-08
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 1
+	dstg = 1
+	sidx = 1
+	sqor = 1
+	attm = 0
+	modCost = 727.5028
+	link = fuelTankHuge_4291466368
+	link = fuelTankHuge_4291465734
+	link = Kosmos.Strut.Connector_4291465100
+	link = Kosmos.Strut.Connector_4291465032
+	sym = Kosmos.URM.Fairing.Conic.T_4291467888
+	attN = connect,URM.2.5.P.Fairing.Base_4291468070
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ProceduralFairingSide
+		isEnabled = True
+		numSegs = 12
+		numSideParts = 2
+		baseRad = 1.25
+		maxRad = 2.108392
+		cylStart = 0.375
+		cylEnd = 18.38
+		topRad = 0
+		inlineHeight = 0
+		sideThickness = 0.025
+		meshPos = (-1.25, 0.6199999, -1.092785E-07)
+		meshRot = (0, 8.742278E-08, 0, -1)
+		shapeLock = True
+		shapeLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ProceduralFairingDecoupler
+		isEnabled = True
+		ejectionPower = 0.74
+		torqueAmount = 0.1
+		decoupled = False
+		ejectionPower_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		torqueAmount_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = True
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionJettison
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARPayloadFairingModule
+		isEnabled = True
+		EVENTS
+		{
+			FairingShapeChanged
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTankHuge_4291466368
+	partName = Part
+	pos = -2.568335,6.927105,1.318327
+	rot = 0,-0.3826834,0,-0.9238796
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = fuelTankHuge_4291466304
+	link = G120_4291466042
+	link = Kosmos.Strut.Connector_4291465802
+	link = Gridfin_4291432792
+	sym = fuelTankHuge_4291467830
+	srfN = srfAttach,Kosmos.URM.Fairing.Conic.T_4291466426
+	attN = top,fuelTankHuge_4291466304
+	attN = bottom,G120_4291466042
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = ToggleFlag
+				guiName = ToggleFlag
+				category = ToggleFlag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 1440
+		maxAmount = 1440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 1760
+		maxAmount = 1760
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelTankHuge_4291466304
+	partName = Part
+	pos = -2.568335,12.52711,1.318327
+	rot = 0,0.3826834,0,0.9238796
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = fuelTankNormal_4291466240
+	sym = fuelTankHuge_4291467766
+	attN = top,fuelTankNormal_4291466240
+	attN = bottom,fuelTankHuge_4291466368
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = ToggleFlag
+				guiName = ToggleFlag
+				category = ToggleFlag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 1440
+		maxAmount = 1440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 1760
+		maxAmount = 1760
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelTankNormal_4291466240
+	partName = Part
+	pos = -2.568335,16.02711,1.318327
+	rot = 0,1,0,-4.371139E-08
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = HGR.noseCone_4291466146
+	link = Kosmos.Strut.Connector_4291466110
+	sym = fuelTankNormal_4291467702
+	attN = top,HGR.noseCone_4291466146
+	attN = bottom,fuelTankHuge_4291466304
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 360
+		maxAmount = 360
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 440
+		maxAmount = 440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = HGR.noseCone_4291466146
+	partName = Part
+	pos = -2.568335,16.90211,1.318327
+	rot = 0,-7.351372E-08,0,-1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	sym = HGR.noseCone_4291467608
+	attN = bottom01,fuelTankNormal_4291466240
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291466110
+	partName = StrutConnector
+	pos = -1.801351,16.02711,1.761146
+	rot = 0,-0.9659261,0,-0.258819
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.2442208,0.2093506,0.3338357; dir: -0.5268001,0.451584,0.7201066
+	sym = Kosmos.Strut.Connector_4291467572
+	srfN = srfAttach,fuelTankNormal_4291466240
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = G120_4291466042
+	partName = Part
+	pos = -2.568335,3.477106,1.318327
+	rot = 0,0.3826834,0,0.9238796
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 2
+	sidx = 6
+	sqor = 3
+	attm = 0
+	modCost = 0
+	link = FASAlaunchClamp25_4291465912
+	sym = G120_4291467504
+	attN = top,fuelTankHuge_4291466368
+	attN = bottom,FASAlaunchClamp25_4291465912
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		EVENTS
+		{
+			LockGimbal
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lock Gimbal
+				guiName = Lock Gimbal
+				category = Lock Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			FreeGimbal
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Free Gimbal
+				guiName = Free Gimbal
+				category = Free Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = FASAlaunchClamp25_4291465912
+	partName = Strut
+	pos = -2.568335,0.8027077,1.318327
+	rot = 0,1.390907E-08,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 2
+	sidx = 1
+	sqor = 3
+	attm = 0
+	modCost = 0
+	sym = FASAlaunchClamp25_4291467374
+	attN = top,G120_4291466042
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.818551
+		height = 1.783352
+		towerRot = 0,-1.390907E-08,0,1
+		EVENTS
+		{
+			Release
+			{
+				active = False
+				guiActive = True
+				guiIcon = Release Clamp
+				guiName = Release Clamp
+				category = Release Clamp
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Generator
+				guiName = Activate Generator
+				category = Activate Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = True
+				guiActive = True
+				guiIcon = Shutdown Generator
+				guiName = Shutdown Generator
+				category = Shutdown Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291465802
+	partName = StrutConnector
+	pos = -1.81013,6.927105,1.756077
+	rot = 0,-0.9659259,0,-0.258819
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.08756875,1.231235,0.3785264; dir: -0.06782569,0.9536467,0.2931855
+	sym = Kosmos.Strut.Connector_4291467264
+	srfN = srfAttach,fuelTankHuge_4291466368
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTankHuge_4291465734
+	partName = Part
+	pos = -2.564011,6.927105,-1.314005
+	rot = 0,0.3826834,0,-0.9238796
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = fuelTankHuge_4291465670
+	link = G120_4291465408
+	link = Kosmos.Strut.Connector_4291465168
+	link = Gridfin_4291432456
+	sym = fuelTankHuge_4291467196
+	srfN = srfAttach,Kosmos.URM.Fairing.Conic.T_4291466426
+	attN = top,fuelTankHuge_4291465670
+	attN = bottom,G120_4291465408
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = ToggleFlag
+				guiName = ToggleFlag
+				category = ToggleFlag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 1440
+		maxAmount = 1440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 1760
+		maxAmount = 1760
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelTankHuge_4291465670
+	partName = Part
+	pos = -2.564011,12.52711,-1.314005
+	rot = 0,-0.3826834,0,0.9238796
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = fuelTankNormal_4291465606
+	sym = fuelTankHuge_4291467132
+	attN = top,fuelTankNormal_4291465606
+	attN = bottom,fuelTankHuge_4291465734
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = ToggleFlag
+				guiName = ToggleFlag
+				category = ToggleFlag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 1440
+		maxAmount = 1440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 1760
+		maxAmount = 1760
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelTankNormal_4291465606
+	partName = Part
+	pos = -2.564011,16.02711,-1.314005
+	rot = 0,1.390907E-08,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = HGR.noseCone_4291465512
+	link = Kosmos.Strut.Connector_4291465476
+	sym = fuelTankNormal_4291467068
+	attN = top,HGR.noseCone_4291465512
+	attN = bottom,fuelTankHuge_4291465670
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 360
+		maxAmount = 360
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 440
+		maxAmount = 440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = HGR.noseCone_4291465512
+	partName = Part
+	pos = -2.564011,16.90211,-1.314005
+	rot = 0,-1.649049E-07,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	sym = HGR.noseCone_4291466974
+	attN = bottom01,fuelTankNormal_4291465606
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291465476
+	partName = StrutConnector
+	pos = -1.808571,16.02711,-1.750159
+	rot = 0,0.9659261,0,-0.2588189
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.2524766,0.1433296,-0.3288651; dir: -0.5755368,0.3267297,-0.74967
+	sym = Kosmos.Strut.Connector_4291466938
+	srfN = srfAttach,fuelTankNormal_4291465606
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = G120_4291465408
+	partName = Part
+	pos = -2.564011,3.477106,-1.314005
+	rot = 0,-0.3826834,0,0.9238796
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 2
+	sidx = 5
+	sqor = 3
+	attm = 0
+	modCost = 0
+	link = FASAlaunchClamp25_4291465278
+	sym = G120_4291466870
+	attN = top,fuelTankHuge_4291465734
+	attN = bottom,FASAlaunchClamp25_4291465278
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		EVENTS
+		{
+			LockGimbal
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lock Gimbal
+				guiName = Lock Gimbal
+				category = Lock Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			FreeGimbal
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Free Gimbal
+				guiName = Free Gimbal
+				category = Free Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = FASAlaunchClamp25_4291465278
+	partName = Strut
+	pos = -2.564011,0.8027077,-1.314005
+	rot = 0,4.371139E-08,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 2
+	sidx = 0
+	sqor = 3
+	attm = 0
+	modCost = 0
+	sym = FASAlaunchClamp25_4291466740
+	attN = top,G120_4291465408
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.818551
+		height = 1.783352
+		towerRot = 0,-4.371139E-08,0,1
+		EVENTS
+		{
+			Release
+			{
+				active = False
+				guiActive = True
+				guiIcon = Release Clamp
+				guiName = Release Clamp
+				category = Release Clamp
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Generator
+				guiName = Activate Generator
+				category = Activate Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = True
+				guiActive = True
+				guiIcon = Shutdown Generator
+				guiName = Shutdown Generator
+				category = Shutdown Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291465168
+	partName = StrutConnector
+	pos = -1.789891,6.927105,-1.760943
+	rot = 0,0.9659259,0,-0.2588191
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.03800521,1.242672,-0.3805525; dir: -0.02923002,0.9557607,-0.2926893
+	sym = Kosmos.Strut.Connector_4291466630
+	srfN = srfAttach,fuelTankHuge_4291465734
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291465100
+	partName = StrutConnector
+	pos = -2.043133,8.072309,0.4579108
+	rot = 0,-0.258819,0,-0.9659259
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.06313843,-0.0008964539,-0.0211733; dir: -0.9480231,-0.01345658,-0.3179168
+	sym = Kosmos.Strut.Connector_4291466562
+	srfN = srfAttach,Kosmos.URM.Fairing.Conic.T_4291466426
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291465032
+	partName = StrutConnector
+	pos = -2.052993,8.069662,-0.4636046
+	rot = 0,0.258819,0,-0.9659259
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.05002512,0.004361153,0.02416615; dir: -0.897676,0.07826645,0.43365
+	sym = Kosmos.Strut.Connector_4291466494
+	srfN = srfAttach,Kosmos.URM.Fairing.Conic.T_4291466426
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FASAGeminiLFECentarTwin_4291464964
+	partName = Part
+	pos = -7.629395E-06,7.447105,-4.768372E-07
+	rot = 0,0.7071068,0,0.7071068
+	attRot = 0,0.7071068,0,0.7071068
+	mir = 1,1,1
+	istg = 1
+	dstg = 1
+	sidx = 2
+	sqor = 1
+	attm = 0
+	modCost = 0
+	link = radialDecoupler_4291464828
+	link = radialDecoupler_4291464706
+	link = FASAlaunchClamp25_4291464584
+	attN = top,URM.2.5.P.Fairing.Base_4291468070
+	attN = bottom,FASAlaunchClamp25_4291464584
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		EVENTS
+		{
+			LockGimbal
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lock Gimbal
+				guiName = Lock Gimbal
+				category = Lock Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			FreeGimbal
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Free Gimbal
+				guiName = Free Gimbal
+				category = Free Gimbal
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GoodspeedPump
+		isEnabled = True
+		pumpLevel = 0
+		autoPump = False
+		autoBalance = False
+		pumpLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 8
+			stepIncrement = 1
+		}
+		autoPump_UIFlight
+		{
+			controlEnabled = True
+		}
+		autoBalance_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			configurePump
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Pump Options
+				guiName = Pump Options
+				category = Pump Options
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 0
+		maxAmount = 40
+		flowState = False
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 720
+		maxAmount = 720
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 880
+		maxAmount = 880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = radialDecoupler_4291464828
+	partName = Part
+	pos = -7.738413E-06,5.666761,-1.250204
+	rot = 0,0.7071068,0,-0.7071069
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 3
+	sidx = 0
+	sqor = 2
+	attm = 1
+	modCost = 0
+	link = solidBooster_4291464780
+	sym = radialDecoupler_4291464706
+	srfN = srfAttach,FASAGeminiLFECentarTwin_4291464964
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1
+		currentScale = 1
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.37.0.0
+		defaultTransformScale = (1, 1, 1)
+		dryCost = 600
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = solidBooster_4291464780
+	partName = Part
+	pos = -7.810479E-06,5.134829,-2.074545
+	rot = 0,1,0,-1.192093E-07
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 4
+	sidx = 7
+	sqor = 3
+	attm = 1
+	modCost = -3.576279E-07
+	sym = solidBooster_4291464658
+	srfN = srfAttach,radialDecoupler_4291464828
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0.9
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1.25
+		currentScale = 1.25
+		defaultScale = 1.25
+		isFreeScale = False
+		version = 1.37.0.0
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		dryCost = 65.19999
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 433
+		maxAmount = 433
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = radialDecoupler_4291464706
+	partName = Part
+	pos = -7.411079E-06,5.666761,1.250203
+	rot = 0,-0.7071069,0,-0.7071067
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 3
+	sidx = 1
+	sqor = 2
+	attm = 1
+	modCost = 0
+	link = solidBooster_4291464658
+	sym = radialDecoupler_4291464828
+	srfN = srfAttach,FASAGeminiLFECentarTwin_4291464964
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		isDecoupled = False
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1
+		currentScale = 1
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.37.0.0
+		defaultTransformScale = (1, 1, 1)
+		dryCost = 600
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = solidBooster_4291464658
+	partName = Part
+	pos = -7.19161E-06,5.134829,2.074543
+	rot = 0,-2.086163E-07,0,-1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 4
+	sidx = 8
+	sqor = 3
+	attm = 1
+	modCost = -3.576279E-07
+	sym = solidBooster_4291464780
+	srfN = srfAttach,radialDecoupler_4291464706
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0.9
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1.25
+		currentScale = 1.25
+		defaultScale = 1.25
+		isFreeScale = False
+		version = 1.37.0.0
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		dryCost = 65.19999
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 433
+		maxAmount = 433
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = FASAlaunchClamp25_4291464584
+	partName = Strut
+	pos = -7.629395E-06,1.647705,-4.768372E-07
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 3
+	dstg = 2
+	sidx = 4
+	sqor = 3
+	attm = 0
+	modCost = 0
+	attN = top,FASAGeminiLFECentarTwin_4291464964
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 2.680227
+		height = 2.628349
+		towerRot = 0,0,0,1
+		EVENTS
+		{
+			Release
+			{
+				active = False
+				guiActive = True
+				guiIcon = Release Clamp
+				guiName = Release Clamp
+				category = Release Clamp
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Generator
+				guiName = Activate Generator
+				category = Activate Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = True
+				guiActive = True
+				guiIcon = Shutdown Generator
+				guiName = Shutdown Generator
+				category = Shutdown Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291464474
+	partName = StrutConnector
+	pos = -1.280034,7.66846,-4.005417E-07
+	rot = 6.322027E-08,8.42937E-08,-0.7071055,0.7071081
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.4953757,-0.8283634,-0.003634693; dir: -0.5132405,-0.8582366,-0.00376577
+	sym = Kosmos.Strut.Connector_4291464406
+	sym = Kosmos.Strut.Connector_4291464338
+	sym = Kosmos.Strut.Connector_4291464270
+	sym = Kosmos.Strut.Connector_4291464202
+	sym = Kosmos.Strut.Connector_4291464134
+	srfN = srfAttach,URM.2.5.P.Fairing.Base_4291468070
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291464406
+	partName = StrutConnector
+	pos = -0.6400207,7.66846,1.108535
+	rot = -0.3535527,0.3535541,-0.6123714,0.6123735
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.5392202,-0.9016793,-0.003956169; dir: -0.5132405,-0.8582366,-0.00376577
+	sym = Kosmos.Strut.Connector_4291464474
+	sym = Kosmos.Strut.Connector_4291464338
+	sym = Kosmos.Strut.Connector_4291464270
+	sym = Kosmos.Strut.Connector_4291464202
+	sym = Kosmos.Strut.Connector_4291464134
+	srfN = srfAttach,URM.2.5.P.Fairing.Base_4291468070
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291464338
+	partName = StrutConnector
+	pos = 0.6400057,7.66846,1.108535
+	rot = -0.6123713,0.6123737,-0.3535528,0.353554
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.5404898,-0.9038025,-0.003965557; dir: -0.5132405,-0.8582366,-0.00376577
+	sym = Kosmos.Strut.Connector_4291464474
+	sym = Kosmos.Strut.Connector_4291464406
+	sym = Kosmos.Strut.Connector_4291464270
+	sym = Kosmos.Strut.Connector_4291464202
+	sym = Kosmos.Strut.Connector_4291464134
+	srfN = srfAttach,URM.2.5.P.Fairing.Base_4291468070
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291464270
+	partName = StrutConnector
+	pos = 1.280019,7.66846,-6.650361E-07
+	rot = -0.7071055,0.7071081,-3.231171E-08,-1.152024E-07
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.4953768,-0.828364,-0.003634695; dir: -0.5132405,-0.8582366,-0.00376577
+	sym = Kosmos.Strut.Connector_4291464474
+	sym = Kosmos.Strut.Connector_4291464406
+	sym = Kosmos.Strut.Connector_4291464338
+	sym = Kosmos.Strut.Connector_4291464202
+	sym = Kosmos.Strut.Connector_4291464134
+	srfN = srfAttach,URM.2.5.P.Fairing.Base_4291468070
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291464202
+	partName = StrutConnector
+	pos = 0.6400054,7.66846,-1.108536
+	rot = -0.6123713,0.6123735,0.3535527,-0.3535542
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.5392203,-0.9016798,-0.003956467; dir: -0.5132405,-0.8582366,-0.00376577
+	sym = Kosmos.Strut.Connector_4291464474
+	sym = Kosmos.Strut.Connector_4291464406
+	sym = Kosmos.Strut.Connector_4291464338
+	sym = Kosmos.Strut.Connector_4291464270
+	sym = Kosmos.Strut.Connector_4291464134
+	srfN = srfAttach,URM.2.5.P.Fairing.Base_4291468070
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291464134
+	partName = StrutConnector
+	pos = -0.6400207,7.66846,-1.108536
+	rot = -0.3535528,0.353554,0.6123713,-0.6123737
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.5404888,-0.9038016,-0.003965437; dir: -0.5132405,-0.8582366,-0.00376577
+	sym = Kosmos.Strut.Connector_4291464474
+	sym = Kosmos.Strut.Connector_4291464406
+	sym = Kosmos.Strut.Connector_4291464338
+	sym = Kosmos.Strut.Connector_4291464270
+	sym = Kosmos.Strut.Connector_4291464202
+	srfN = srfAttach,URM.2.5.P.Fairing.Base_4291468070
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = mumech.MJ2.AR202_4291464066
+	partName = Part
+	pos = -1.051405,13.9071,-0.6070253
+	rot = 0,0.258819,0,-0.9659259
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	srfN = srfAttach,utilityCabin_4291468274
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MechJebCore
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MechJebLocalSettings
+		{
+			MechJebModuleJoke
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleMenu
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSmartASS
+			{
+				mode = ORBITAL
+				target = OFF
+				advReference = INERTIAL
+				advDirection = FORWARD
+				forceRol = False
+				unlockParts = 
+				unlockTechs = flightControl
+				srfHdg
+				{
+					val = 90
+					_text = 90
+				}
+				srfPit
+				{
+					val = 90
+					_text = 90
+				}
+				srfRol
+				{
+					val = 0
+					_text = 0
+				}
+				rol
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleSpaceplaneAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleStageStats
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSpaceplaneGuidance
+			{
+				unlockParts = 
+				unlockTechs = unmannedTech
+			}
+			MechJebModuleRendezvousGuidance
+			{
+				unlockParts = 
+				unlockTechs = advUnmanned
+			}
+			MechJebModuleRendezvousAutopilotWindow
+			{
+				unlockParts = 
+				unlockTechs = advUnmanned
+			}
+			MechJebModuleRoverController
+			{
+				ControlHeading = False
+				ControlSpeed = False
+				BrakeOnEject = False
+				BrakeOnEnergyDepletion = False
+				WarpToDaylight = True
+				StabilityControl = False
+				LimitAcceleration = False
+				unlockParts = 
+				unlockTechs = 
+				heading
+				{
+					val = 0
+					_text = 0
+				}
+				speed
+				{
+					val = 10
+					_text = 10
+				}
+			}
+			MechJebModuleSettings
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRoverWindow
+			{
+				unlockParts = 
+				unlockTechs = fieldScience
+			}
+			MechJebModuleTargetController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			ModExtensionDemo
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWaypointHelpWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleThrustWindow
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleTranslatron
+			{
+				trans_spd = 0
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleWaypointWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWarpHelper
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+				phaseAngle
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleRendezvousAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleJokeObscurePanel
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAttitudeAdjustment
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleLandingAutopilot
+			{
+				deployGears = True
+				deployChutes = True
+				unlockParts = 
+				unlockTechs = 
+				touchdownSpeed
+				{
+					val = 0.5
+					_text = 0.5
+				}
+				limitGearsStage
+				{
+					val = 0
+					_text = 0
+				}
+				limitChutesStage
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleAscentPathEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDockingGuidance
+			{
+				unlockParts = 
+				unlockTechs = advUnmanned
+			}
+			MechJebModuleDockingAutopilot
+			{
+				forceRol = False
+				overrideSafeDistance = False
+				unlockParts = 
+				unlockTechs = 
+				rol
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomWindowEditor
+			{
+				unlockParts = 
+				unlockTechs = flightControl
+			}
+			MechJebModuleAscentGuidance
+			{
+				unlockParts = 
+				unlockTechs = unmannedTech
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleLandingGuidance
+			{
+				unlockParts = 
+				unlockTechs = unmannedTech
+			}
+			MechJebModuleLandingPredictions
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleNodeEditor
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleWarpController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustController
+			{
+				limitThrottle = False
+				unlockParts = 
+				unlockTechs = 
+				maxThrottle
+				{
+					val = 1
+					_text = 100
+				}
+			}
+			MechJebModuleRCSController
+			{
+				unlockParts = 
+				unlockTechs = 
+				Tf
+				{
+					val = 1
+					_text = 1
+				}
+			}
+			MechJebModuleRCSBalancer
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAttitudeController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleStagingController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleFlightRecorder
+			{
+				markUT = 0
+				deltaVExpended = 0
+				dragLosses = 0
+				gravityLosses = 0
+				steeringLosses = 0
+				markLatitude = 0
+				markLongitude = 0
+				markAltitude = 0
+				markBodyIndex = 1
+				maxDragGees = 0
+				unlockParts = 
+				unlockTechs = 
+			}
+		}
+	}
+	MODULE
+	{
+		name = MechJebAR202
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExWorkshop
+		isEnabled = True
+		EVENTS
+		{
+			ExDiscoverWorkshops
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Surfaced
+		{
+		}
+		Flew
+		{
+		}
+		FlewBy
+		{
+		}
+		Orbited
+		{
+		}
+		SubOrbited
+		{
+		}
+	}
+	MODULE
+	{
+		name = FNModuleRadiation
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 5
+		maxAmount = 5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291464008
+	partName = StrutConnector
+	pos = -1.220896,13.14348,-4.040671E-07
+	rot = 0,0,0,-1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.8875031,-0.2631006,-0.02426231; dir: -0.9584288,-0.2841263,-0.02620125
+	sym = Kosmos.Strut.Connector_4291463940
+	sym = Kosmos.Strut.Connector_4291463872
+	sym = Kosmos.Strut.Connector_4291463804
+	sym = Kosmos.Strut.Connector_4291463736
+	sym = Kosmos.Strut.Connector_4291463668
+	srfN = srfAttach,utilityCabin_4291468274
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291463940
+	partName = StrutConnector
+	pos = -0.6104516,13.14348,1.057319
+	rot = 0,-0.5,0,-0.8660254
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.9548855,-0.2830753,-0.02610427; dir: -0.9584288,-0.2841263,-0.02620125
+	sym = Kosmos.Strut.Connector_4291464008
+	sym = Kosmos.Strut.Connector_4291463872
+	sym = Kosmos.Strut.Connector_4291463804
+	sym = Kosmos.Strut.Connector_4291463736
+	sym = Kosmos.Strut.Connector_4291463668
+	srfN = srfAttach,utilityCabin_4291468274
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291463872
+	partName = StrutConnector
+	pos = 0.6104367,13.14348,1.057319
+	rot = 0,-0.8660254,0,-0.5
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.9689783,-0.2872543,-0.02648968; dir: -0.9584288,-0.2841263,-0.02620125
+	sym = Kosmos.Strut.Connector_4291464008
+	sym = Kosmos.Strut.Connector_4291463940
+	sym = Kosmos.Strut.Connector_4291463804
+	sym = Kosmos.Strut.Connector_4291463736
+	sym = Kosmos.Strut.Connector_4291463668
+	srfN = srfAttach,utilityCabin_4291468274
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291463804
+	partName = StrutConnector
+	pos = 1.220881,13.14348,-6.563413E-07
+	rot = 0,-1,0,4.371139E-08
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.8875039,-0.2631006,-0.02426233; dir: -0.9584288,-0.2841263,-0.02620125
+	sym = Kosmos.Strut.Connector_4291464008
+	sym = Kosmos.Strut.Connector_4291463940
+	sym = Kosmos.Strut.Connector_4291463872
+	sym = Kosmos.Strut.Connector_4291463736
+	sym = Kosmos.Strut.Connector_4291463668
+	srfN = srfAttach,utilityCabin_4291468274
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291463736
+	partName = StrutConnector
+	pos = 0.6104366,13.14348,-1.057321
+	rot = 0,-0.8660254,0,0.5000001
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_8; pos: -0.9548857,-0.2830753,-0.02610439; dir: -0.9584288,-0.2841263,-0.02620125
+	sym = Kosmos.Strut.Connector_4291464008
+	sym = Kosmos.Strut.Connector_4291463940
+	sym = Kosmos.Strut.Connector_4291463872
+	sym = Kosmos.Strut.Connector_4291463804
+	sym = Kosmos.Strut.Connector_4291463668
+	srfN = srfAttach,utilityCabin_4291468274
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Strut.Connector_4291463668
+	partName = StrutConnector
+	pos = -0.6104516,13.14348,-1.057321
+	rot = 0,-0.5000001,0,0.8660254
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	cData = tgt: Kosmos.URM.Fairing.Conic.T_29; pos: -0.9689769,-0.2872534,-0.02648953; dir: -0.9584288,-0.2841263,-0.02620125
+	sym = Kosmos.Strut.Connector_4291464008
+	sym = Kosmos.Strut.Connector_4291463940
+	sym = Kosmos.Strut.Connector_4291463872
+	sym = Kosmos.Strut.Connector_4291463804
+	sym = Kosmos.Strut.Connector_4291463736
+	srfN = srfAttach,utilityCabin_4291468274
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Berthing.Node.Single.Side_4291463600
+	partName = Part
+	pos = 0.9174535,14.12714,-0.529697
+	rot = 0.3535534,0.6123725,-0.6123725,0.3535534
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = Kosmos.APAS.69_4291463572
+	sym = Kosmos.Berthing.Node.Single.Side_4291463386
+	srfN = srfAttach,utilityCabin_4291468274
+	attN = top,Kosmos.APAS.69_4291463572
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.APAS.69_4291463572
+	partName = Part
+	pos = 1.255003,14.12714,-0.7245809
+	rot = -0.6123725,-0.3535534,-0.3535534,0.6123725
+	attRot = -0.5,-0.5,-0.5,0.5
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	sym = Kosmos.APAS.69_4291463358
+	attN = bottom,Kosmos.Berthing.Node.Single.Side_4291463600
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		nodeType = size1
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		status = Locked
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		EVENTS
+		{
+			Toggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle
+				guiName = Close Guide Fins
+				category = Toggle
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAdaptiveDockingNode
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.Berthing.Node.Single.Side_4291463386
+	partName = Part
+	pos = -0.9174687,14.12714,0.5296961
+	rot = -0.6123725,0.3535534,-0.3535534,-0.6123725
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = Kosmos.APAS.69_4291463358
+	sym = Kosmos.Berthing.Node.Single.Side_4291463600
+	srfN = srfAttach,utilityCabin_4291468274
+	attN = top,Kosmos.APAS.69_4291463358
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Kosmos.APAS.69_4291463358
+	partName = Part
+	pos = -1.255018,14.12714,0.7245799
+	rot = -0.3535534,0.6123725,0.6123725,0.3535534
+	attRot = -0.5,-0.5,-0.5,0.5
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	sym = Kosmos.APAS.69_4291463572
+	attN = bottom,Kosmos.Berthing.Node.Single.Side_4291463386
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		nodeType = size1
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		status = Locked
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		EVENTS
+		{
+			Toggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle
+				guiName = Close Guide Fins
+				category = Toggle
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAdaptiveDockingNode
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Gridfin_4291432792
+	partName = Part
+	pos = -3.00336,4.478962,2.071811
+	rot = 0,-0.5,0,-0.8660256
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Gridfin_4291432736
+	srfN = srfAttach,fuelTankHuge_4291466368
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Gridfin_4291432736
+	partName = Part
+	pos = 3.003346,4.478962,-2.071813
+	rot = 0,0.8660256,0,-0.5
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Gridfin_4291432792
+	srfN = srfAttach,fuelTankHuge_4291467830
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Gridfin_4291432456
+	partName = Part
+	pos = -2.999002,4.500521,-2.067432
+	rot = 0,0.5,0,-0.8660254
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Gridfin_4291432342
+	srfN = srfAttach,fuelTankHuge_4291465734
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Gridfin_4291432342
+	partName = Part
+	pos = 2.998987,4.500521,2.067431
+	rot = 0,0.8660254,0,0.5000001
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = Gridfin_4291432456
+	srfN = srfAttach,fuelTankHuge_4291467196
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
