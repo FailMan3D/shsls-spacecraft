@@ -1,0 +1,10387 @@
+ship = IR MXT Reactor
+version = 0.90.0
+description = Reactor module for the MXT modular IPV system.
+type = VAB
+size = 4.383461,8.100151,5.191848
+PART
+{
+	part = MultitrussALWMG100M3_4289097612
+	partName = Part
+	pos = 0.0005170107,15.00002,0.0001465678
+	attPos = 0,0,0
+	attPos0 = 0.0005170107,15.00002,0.0001465678
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = IRPistonScaleable_4293108058
+	link = IRPistonScaleable_4293107416
+	link = IRPistonScaleable_4293106774
+	link = IRPistonScaleable_4293650610
+	link = IRPistonScaleable_4293106132
+	link = NuclearReactor125_4289036050
+	link = dockingPort3_4288976388
+	link = dockingPort3_4288975174
+	link = dockingPort3_4288974750
+	link = dockingPort3_4288974326
+	link = structuralPanel1_4288822770
+	link = CM.ALTCM051T1S_4288777054
+	link = structuralPanel1_4288699584
+	link = trussAWT001Connector_4288697626
+	link = trussAWT001Connector_4288697216
+	link = trussAWT001Connector_4288697152
+	link = trussAWT001Connector_4288697088
+	attN = side03,structuralPanel1_4288699584
+	attN = side04,structuralPanel1_4288822770
+	attN = top,IRPistonScaleable_4293106132
+	attN = bottom,NuclearReactor125_4289036050
+	attN = side02trussALWMG100C,CM.ALTCM051T1S_4288777054
+	attN = toptrussALWMG100C,IRPistonScaleable_4293650610
+	attN = bottomtrussALWMG100C,dockingPort3_4288976388
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = IRPistonScaleable_4293108058
+	partName = Part
+	pos = -0.940108,16.88127,0.9407716
+	attPos = 0,0,0
+	attPos0 = -0.940625,1.88125,0.940625
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293108014
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	attN = top,TelescopeFullAScaleable_4293108014
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1.25
+		currentScale = 1.25
+		defaultScale = 1.25
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg P
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.3
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.3
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0.01
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.3
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.3
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293108014
+	partName = Part
+	pos = -0.940108,19.63797,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0,2.751249,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293107970
+	attN = bottom,IRPistonScaleable_4293108058
+	attN = top,TelescopeFullAScaleable_4293107970
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1
+		currentScale = 1
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg A
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.8
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.8
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.8
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.8
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293107970
+	partName = Part
+	pos = -0.940108,19.80468,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0,0.1700001,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = -48.8
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293107926
+	attN = bottom,TelescopeFullAScaleable_4293108014
+	attN = top,TelescopeFullAScaleable_4293107926
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 0.8
+		currentScale = 0.8
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 51.2
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg B
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.44
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.44
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.44
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.44
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293107926
+	partName = Part
+	pos = -0.940108,19.93397,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0,0.1359997,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = -73.7856
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = structuralPanel1_4293107882
+	attN = bottom,TelescopeFullAScaleable_4293107970
+	attN = top,structuralPanel1_4293107882
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 0.64
+		currentScale = 0.64
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 26.2144
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg C
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.152
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.152
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.152
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.152
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = structuralPanel1_4293107882
+	partName = Part
+	pos = -0.940108,20.04467,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0,0.1107006,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = dockingPort2_4293107850
+	attN = top,dockingPort2_4293107850
+	attN = bottom,TelescopeFullAScaleable_4293107926
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 100
+		currentScale = 100
+		defaultScale = 100
+		isFreeScale = True
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 30
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 25
+			maxValue = 400
+			incrementLarge = 37.5
+			incrementSmall = 3.75
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4293107850
+	partName = Part
+	pos = -0.940108,20.07218,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0,0.02750015,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,structuralPanel1_4293107882
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = IRPistonScaleable_4293107416
+	partName = Part
+	pos = 0.941142,16.88127,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0.940625,1.88125,0.940625
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293107370
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	attN = top,TelescopeFullAScaleable_4293107370
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1.25
+		currentScale = 1.25
+		defaultScale = 1.25
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg P
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.3
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.3
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0.01
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.3
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.3
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293107370
+	partName = Part
+	pos = 0.941142,19.63797,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0,2.751249,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293107326
+	attN = bottom,IRPistonScaleable_4293107416
+	attN = top,TelescopeFullAScaleable_4293107326
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1
+		currentScale = 1
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg A
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.8
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.8
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.8
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.8
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293107326
+	partName = Part
+	pos = 0.941142,19.80468,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0,0.1700001,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = -48.8
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293107282
+	attN = bottom,TelescopeFullAScaleable_4293107370
+	attN = top,TelescopeFullAScaleable_4293107282
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 0.8
+		currentScale = 0.8
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 51.2
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg B
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.44
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.44
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.44
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.44
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293107282
+	partName = Part
+	pos = 0.941142,19.93397,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0,0.1359997,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = -73.7856
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = structuralPanel1_4293107238
+	attN = bottom,TelescopeFullAScaleable_4293107326
+	attN = top,structuralPanel1_4293107238
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 0.64
+		currentScale = 0.64
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 26.2144
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg C
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.152
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.152
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.152
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.152
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = structuralPanel1_4293107238
+	partName = Part
+	pos = 0.941142,20.04467,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0,0.1107006,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = dockingPort2_4293107206
+	attN = top,dockingPort2_4293107206
+	attN = bottom,TelescopeFullAScaleable_4293107282
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 100
+		currentScale = 100
+		defaultScale = 100
+		isFreeScale = True
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 30
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 25
+			maxValue = 400
+			incrementLarge = 37.5
+			incrementSmall = 3.75
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4293107206
+	partName = Part
+	pos = 0.941142,20.07218,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0,0.02750015,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,structuralPanel1_4293107238
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = IRPistonScaleable_4293106774
+	partName = Part
+	pos = 0.941142,16.88127,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0.940625,1.88125,-0.940625
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293106728
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	attN = top,TelescopeFullAScaleable_4293106728
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1.25
+		currentScale = 1.25
+		defaultScale = 1.25
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg P
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.3
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.3
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0.01
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.3
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.3
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293106728
+	partName = Part
+	pos = 0.941142,19.63797,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0,2.751249,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293106684
+	attN = bottom,IRPistonScaleable_4293106774
+	attN = top,TelescopeFullAScaleable_4293106684
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1
+		currentScale = 1
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg A
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.8
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.8
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.8
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.8
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293106684
+	partName = Part
+	pos = 0.941142,19.80468,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0,0.1700001,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = -48.8
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293106640
+	attN = bottom,TelescopeFullAScaleable_4293106728
+	attN = top,TelescopeFullAScaleable_4293106640
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 0.8
+		currentScale = 0.8
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 51.2
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg B
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.44
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.44
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.44
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.44
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293106640
+	partName = Part
+	pos = 0.941142,19.93397,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0,0.1359997,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = -73.7856
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = structuralPanel1_4293106596
+	attN = bottom,TelescopeFullAScaleable_4293106684
+	attN = top,structuralPanel1_4293106596
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 0.64
+		currentScale = 0.64
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 26.2144
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg C
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.152
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.152
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.152
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.152
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = structuralPanel1_4293106596
+	partName = Part
+	pos = 0.941142,20.04467,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0,0.1107006,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = dockingPort2_4293106564
+	attN = top,dockingPort2_4293106564
+	attN = bottom,TelescopeFullAScaleable_4293106640
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 100
+		currentScale = 100
+		defaultScale = 100
+		isFreeScale = True
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 30
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 25
+			maxValue = 400
+			incrementLarge = 37.5
+			incrementSmall = 3.75
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4293106564
+	partName = Part
+	pos = 0.941142,20.07218,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0,0.02750015,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,structuralPanel1_4293106596
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = IRPistonScaleable_4293650610
+	partName = Part
+	pos = -0.940108,16.88127,-0.9404784
+	attPos = 0,0,0
+	attPos0 = -0.940625,1.88125,-0.940625
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293506464
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	attN = top,TelescopeFullAScaleable_4293506464
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1.25
+		currentScale = 1.25
+		defaultScale = 1.25
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg P
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.3
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.3
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0.01
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.3
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.3
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293506464
+	partName = Part
+	pos = -0.940108,19.63797,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0,2.751249,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293505080
+	attN = bottom,IRPistonScaleable_4293650610
+	attN = top,TelescopeFullAScaleable_4293505080
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1
+		currentScale = 1
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg A
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.8
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.8
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.8
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.8
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293505080
+	partName = Part
+	pos = -0.940108,19.80468,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0,0.1700001,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = -48.8
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293504600
+	attN = bottom,TelescopeFullAScaleable_4293506464
+	attN = top,TelescopeFullAScaleable_4293504600
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 0.8
+		currentScale = 0.8
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 51.2
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg B
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.44
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.44
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.44
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.44
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293504600
+	partName = Part
+	pos = -0.940108,19.93397,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0,0.1359997,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = -73.7856
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = structuralPanel1_4293362428
+	attN = bottom,TelescopeFullAScaleable_4293505080
+	attN = top,structuralPanel1_4293362428
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 0.64
+		currentScale = 0.64
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 26.2144
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg C
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.152
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.15
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.152
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.152
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = structuralPanel1_4293362428
+	partName = Part
+	pos = -0.940108,20.04467,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0,0.1107006,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = dockingPort2_4293116846
+	attN = top,dockingPort2_4293116846
+	attN = bottom,TelescopeFullAScaleable_4293504600
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 100
+		currentScale = 100
+		defaultScale = 100
+		isFreeScale = True
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 30
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 25
+			maxValue = 400
+			incrementLarge = 37.5
+			incrementSmall = 3.75
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4293116846
+	partName = Part
+	pos = -0.940108,20.07218,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0,0.02750015,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,structuralPanel1_4293362428
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = IRPistonScaleable_4293106132
+	partName = Part
+	pos = 0.0005170107,16.88127,0.0001465678
+	attPos = 0,0,0
+	attPos0 = 0,1.88125,0
+	rot = 0,-0.3826835,0,0.9238796
+	attRot = 0,-0.3826835,0,0.9238796
+	attRot0 = 0,-0.3826835,0,0.9238796
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293106088
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	attN = top,TelescopeFullAScaleable_4293106088
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1.25
+		currentScale = 1.25
+		defaultScale = 1.25
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg P
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.3
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.3
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0.01
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.3
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.3
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293106088
+	partName = Part
+	pos = 0.0005170107,19.63797,0.0001465678
+	attPos = 0,0,0
+	attPos0 = 0,2.751249,0
+	rot = 0,-0.3826834,0,0.9238796
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293106044
+	attN = bottom,IRPistonScaleable_4293106132
+	attN = top,TelescopeFullAScaleable_4293106044
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1
+		currentScale = 1
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 100
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg A
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.8
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.8
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.8
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.8
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293106044
+	partName = Part
+	pos = 0.0005170107,19.80468,0.0001465678
+	attPos = 0,0,0
+	attPos0 = 0,0.1700001,0
+	rot = 0,-0.3826834,0,0.9238796
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = -48.8
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TelescopeFullAScaleable_4293106000
+	attN = bottom,TelescopeFullAScaleable_4293106088
+	attN = top,TelescopeFullAScaleable_4293106000
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 0.8
+		currentScale = 0.8
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 51.2
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg B
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.44
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.44
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.44
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.44
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TelescopeFullAScaleable_4293106000
+	partName = Part
+	pos = 0.0005170107,19.93397,0.0001465678
+	attPos = 0,0,0
+	attPos0 = 0,0.1359997,0
+	rot = 0,-0.3826834,0,0.9238796
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = -73.7856
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = structuralPanel1_4293105956
+	attN = bottom,TelescopeFullAScaleable_4293106044
+	attN = top,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 0.64
+		currentScale = 0.64
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 26.2144
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MuMechToggle
+		isEnabled = True
+		servoName = Cyl Seg C
+		groupName = Reactor End
+		forwardKey = 
+		reverseKey = 
+		on = False
+		isMotionLock = False
+		customSpeed = 1
+		rotateKey = 
+		revRotateKey = 
+		rotateLimits = False
+		rotateMin = 0
+		rotateMax = 360
+		reversedRotationOn = False
+		reversedRotationKey = False
+		rotationDelta = 0
+		rotation = 0
+		rotationEuler = 0
+		translateLimits = True
+		translateMin = 0
+		translateMax = 1.152
+		reversedTranslationOn = False
+		reversedTranslationKey = False
+		translationDelta = 0
+		translation = 0
+		freeMoving = False
+		minRange = 
+		maxRange = 
+		minTweak = 0
+		maxTweak = 1.152
+		stepIncrement = 0.01
+		speedTweak = 1
+		speedTweakFine = 0
+		limitTweakable = False
+		limitTweakableFlag = False
+		invertAxis = False
+		fixedMeshOriginalLocation = (0, 0, 0)
+		hasModel = False
+		minTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.152
+			incrementSlide = 0.01
+		}
+		maxTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1.152
+			incrementSlide = 0.01
+		}
+		stepIncrement_UIFlight
+		{
+			controlEnabled = True
+		}
+		speedTweak_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.1
+			maxValue = 5
+			stepIncrement = 0.1
+		}
+		speedTweakFine_UIFlight
+		{
+			controlEnabled = True
+			minValue = -0.1
+			maxValue = 0.1
+			stepIncrement = 0.01
+		}
+		EVENTS
+		{
+			limitTweakableToggle
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rotate Limits Off
+				guiName = Rotate Limits Off
+				category = Rotate Limits Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis Off
+				guiName = Invert Axis Off
+				category = Invert Axis Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertAxisOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Invert Axis On
+				guiName = Invert Axis On
+				category = Invert Axis On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowMainMenu
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show Position Editor
+				guiName = Show Position Editor
+				category = Show Position Editor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Engage Lock
+				guiName = Engage Lock
+				category = Engage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Deactivate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disengage Lock
+				guiName = Disengage Lock
+				category = Disengage Lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LockToggle
+			{
+				actionGroup = None
+			}
+			MovePlusAction
+			{
+				actionGroup = None
+			}
+			MoveMinusAction
+			{
+				actionGroup = None
+			}
+			MoveCenterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = structuralPanel1_4293105956
+	partName = Part
+	pos = 0.0005170107,20.04467,0.0001465678
+	attPos = 0,0,0
+	attPos0 = 0,0.1107006,0
+	rot = 0,-0.3826834,0,0.9238796
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = dockingPort2_4293105924
+	link = trussAWT001Connector_4292987180
+	link = trussAWT001Connector_4292974190
+	link = trussAWT001Connector_4292974126
+	link = trussAWT001Connector_4292974062
+	link = trussAWT001Connector_4292973998
+	link = trussAWT001Connector_4292973934
+	link = trussAWT001Connector_4292973870
+	link = trussAWT001Connector_4292973806
+	link = trussAWT001Connector_4292984772
+	link = trussAWT001Connector_4292972588
+	link = trussAWT001Connector_4292972524
+	link = trussAWT001Connector_4292972460
+	link = trussAWT001Connector_4292972396
+	link = trussAWT001Connector_4292972332
+	link = trussAWT001Connector_4292972268
+	link = trussAWT001Connector_4292972204
+	attN = top,dockingPort2_4293105924
+	attN = bottom,TelescopeFullAScaleable_4293106000
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 100
+		currentScale = 100
+		defaultScale = 100
+		isFreeScale = True
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 30
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 25
+			maxValue = 400
+			incrementLarge = 37.5
+			incrementSmall = 3.75
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4293105924
+	partName = Part
+	pos = 0.0005170107,20.07218,0.0001465678
+	attPos = 0,0,0
+	attPos0 = 0,0.02750015,0
+	rot = 0,-0.3826834,0,0.9238796
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292987180
+	partName = StrutConnector
+	pos = -0.0714418,20.04324,-0.6350014
+	attPos = 0,0,0
+	attPos0 = -0.5,-0.001432419,-0.398235
+	rot = 0.6532816,0.2705981,0.2705981,-0.6532815
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0.7071068,8.940697E-08,-2.980232E-08,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_23; pos: -0.8101982,0.2888255,0.005024197; dir: -0.9419213,0.3357829,0.005840955
+	sym = trussAWT001Connector_4292974190
+	sym = trussAWT001Connector_4292974126
+	sym = trussAWT001Connector_4292974062
+	sym = trussAWT001Connector_4292973998
+	sym = trussAWT001Connector_4292973934
+	sym = trussAWT001Connector_4292973870
+	sym = trussAWT001Connector_4292973806
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292974190
+	partName = StrutConnector
+	pos = -0.4994829,20.04324,-0.3980883
+	attPos = 0,0,0
+	attPos0 = -0.635148,-0.001432419,0.07195878
+	rot = 0.7071068,1.639128E-07,2.980232E-08,-0.7071068
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0.6532815,-0.270598,-0.2705981,-0.6532815
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_23; pos: -0.1189097,0.0423897,0.0007381641; dir: -0.9419213,0.3357829,0.005840955
+	sym = trussAWT001Connector_4292987180
+	sym = trussAWT001Connector_4292974126
+	sym = trussAWT001Connector_4292974062
+	sym = trussAWT001Connector_4292973998
+	sym = trussAWT001Connector_4292973934
+	sym = trussAWT001Connector_4292973870
+	sym = trussAWT001Connector_4292973806
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292974126
+	partName = StrutConnector
+	pos = -0.6346309,20.04324,0.07210556
+	attPos = 0,0,0
+	attPos0 = -0.3982349,-0.001432419,0.5
+	rot = 0.6532816,-0.2705979,-0.2705981,-0.6532815
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0.5,-0.4999999,-0.5000001,-0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_5; pos: -0.8101972,0.2888247,0.005024139; dir: -0.9419213,0.3357829,0.005840955
+	sym = trussAWT001Connector_4292987180
+	sym = trussAWT001Connector_4292974190
+	sym = trussAWT001Connector_4292974062
+	sym = trussAWT001Connector_4292973998
+	sym = trussAWT001Connector_4292973934
+	sym = trussAWT001Connector_4292973870
+	sym = trussAWT001Connector_4292973806
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292974062
+	partName = StrutConnector
+	pos = -0.397718,20.04324,0.5001465
+	attPos = 0,0,0
+	attPos0 = 0.07195872,-0.001432419,0.635148
+	rot = 0.5000001,-0.4999999,-0.5000001,-0.5000001
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0.2705981,-0.6532815,-0.6532815,-0.2705982
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_5; pos: -0.1189101,0.04238993,0.0007381831; dir: -0.9419213,0.3357829,0.005840955
+	sym = trussAWT001Connector_4292987180
+	sym = trussAWT001Connector_4292974190
+	sym = trussAWT001Connector_4292974126
+	sym = trussAWT001Connector_4292973998
+	sym = trussAWT001Connector_4292973934
+	sym = trussAWT001Connector_4292973870
+	sym = trussAWT001Connector_4292973806
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292973998
+	partName = StrutConnector
+	pos = 0.07247582,20.04324,0.6352944
+	attPos = 0,0,0
+	attPos0 = 0.5,-0.001432419,0.3982348
+	rot = 0.2705981,-0.6532816,-0.6532815,-0.2705981
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = -5.960464E-08,-0.7071068,-0.7071068,-5.960464E-08
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_11; pos: -0.8101979,0.288825,0.005023819; dir: -0.9419213,0.3357829,0.005840955
+	sym = trussAWT001Connector_4292987180
+	sym = trussAWT001Connector_4292974190
+	sym = trussAWT001Connector_4292974126
+	sym = trussAWT001Connector_4292974062
+	sym = trussAWT001Connector_4292973934
+	sym = trussAWT001Connector_4292973870
+	sym = trussAWT001Connector_4292973806
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292973934
+	partName = StrutConnector
+	pos = 0.5005168,20.04324,0.3983815
+	attPos = 0,0,0
+	attPos0 = 0.635148,-0.001432419,-0.07195887
+	rot = 0,-0.7071067,-0.7071068,-1.490116E-08
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = -0.2705981,-0.6532815,-0.6532815,0.270598
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_11; pos: -0.1189098,0.04238979,0.000738151; dir: -0.9419213,0.3357829,0.005840955
+	sym = trussAWT001Connector_4292987180
+	sym = trussAWT001Connector_4292974190
+	sym = trussAWT001Connector_4292974126
+	sym = trussAWT001Connector_4292974062
+	sym = trussAWT001Connector_4292973998
+	sym = trussAWT001Connector_4292973870
+	sym = trussAWT001Connector_4292973806
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292973870
+	partName = StrutConnector
+	pos = 0.6356648,20.04324,-0.07181227
+	attPos = 0,0,0
+	attPos0 = 0.3982348,-0.001432419,-0.5
+	rot = -0.2705982,-0.6532815,-0.6532816,0.2705979
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = -0.5000001,-0.5000001,-0.5,0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_17; pos: -0.8101973,0.2888248,0.005024218; dir: -0.9419213,0.3357829,0.005840955
+	sym = trussAWT001Connector_4292987180
+	sym = trussAWT001Connector_4292974190
+	sym = trussAWT001Connector_4292974126
+	sym = trussAWT001Connector_4292974062
+	sym = trussAWT001Connector_4292973998
+	sym = trussAWT001Connector_4292973934
+	sym = trussAWT001Connector_4292973806
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292973806
+	partName = StrutConnector
+	pos = 0.3987518,20.04324,-0.4998536
+	attPos = 0,0,0
+	attPos0 = -0.07195896,-0.001432419,-0.635148
+	rot = -0.5000001,-0.5000001,-0.4999999,0.5000001
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = -0.6532816,-0.270598,-0.2705979,0.6532815
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_17; pos: -0.1189108,0.04239027,0.0007381793; dir: -0.9419213,0.3357829,0.005840955
+	sym = trussAWT001Connector_4292987180
+	sym = trussAWT001Connector_4292974190
+	sym = trussAWT001Connector_4292974126
+	sym = trussAWT001Connector_4292974062
+	sym = trussAWT001Connector_4292973998
+	sym = trussAWT001Connector_4292973934
+	sym = trussAWT001Connector_4292973870
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292984772
+	partName = StrutConnector
+	pos = 0.07547233,20.04084,-0.6320052
+	attPos = 0,0,0
+	attPos0 = -0.3939976,-0.003826141,-0.5000003
+	rot = 0.2705979,-0.6532816,0.6532815,0.2705981
+	attRot = -0.7071067,0,0,-0.7071067
+	attRot0 = 0.4999999,-0.4999999,0.5000001,0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_17; pos: -0.8273178,0.310183,-0.004003531; dir: -0.9363423,0.3510592,-0.004531423
+	sym = trussAWT001Connector_4292972588
+	sym = trussAWT001Connector_4292972524
+	sym = trussAWT001Connector_4292972460
+	sym = trussAWT001Connector_4292972396
+	sym = trussAWT001Connector_4292972332
+	sym = trussAWT001Connector_4292972268
+	sym = trussAWT001Connector_4292972204
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292972588
+	partName = StrutConnector
+	pos = -0.3934808,20.04084,-0.4998536
+	attPos = 0,0,0
+	attPos0 = -0.632152,-0.003826141,-0.0749552
+	rot = 0.4999999,-0.4999999,0.5000001,0.5000001
+	attRot = -0.7071067,0,0,-0.7071067
+	attRot0 = 0.6532815,-0.2705979,0.2705982,0.6532816
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_23; pos: -0.1243636,0.04662706,-0.000602775; dir: -0.9363423,0.3510592,-0.004531423
+	sym = trussAWT001Connector_4292984772
+	sym = trussAWT001Connector_4292972524
+	sym = trussAWT001Connector_4292972460
+	sym = trussAWT001Connector_4292972396
+	sym = trussAWT001Connector_4292972332
+	sym = trussAWT001Connector_4292972268
+	sym = trussAWT001Connector_4292972204
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292972524
+	partName = StrutConnector
+	pos = -0.631635,20.04084,-0.07480863
+	attPos = 0,0,0
+	attPos0 = -0.5000003,-0.003826141,0.3939976
+	rot = 0.6532815,-0.2705979,0.2705982,0.6532816
+	attRot = -0.7071067,0,0,-0.7071067
+	attRot0 = 0.7071068,8.940697E-08,8.940697E-08,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_23; pos: -0.8273177,0.3101831,-0.004003911; dir: -0.9363423,0.3510592,-0.004531423
+	sym = trussAWT001Connector_4292984772
+	sym = trussAWT001Connector_4292972588
+	sym = trussAWT001Connector_4292972460
+	sym = trussAWT001Connector_4292972396
+	sym = trussAWT001Connector_4292972332
+	sym = trussAWT001Connector_4292972268
+	sym = trussAWT001Connector_4292972204
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292972460
+	partName = StrutConnector
+	pos = -0.4994829,20.04084,0.3941445
+	attPos = 0,0,0
+	attPos0 = -0.07495525,-0.003826141,0.6321521
+	rot = 0.7071068,0,1.788139E-07,0.7071068
+	attRot = -0.7071067,0,0,-0.7071067
+	attRot0 = 0.6532815,0.2705981,-0.270598,0.6532815
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_5; pos: -0.1243627,0.04662679,-0.0006027624; dir: -0.9363423,0.3510592,-0.004531423
+	sym = trussAWT001Connector_4292984772
+	sym = trussAWT001Connector_4292972588
+	sym = trussAWT001Connector_4292972524
+	sym = trussAWT001Connector_4292972396
+	sym = trussAWT001Connector_4292972332
+	sym = trussAWT001Connector_4292972268
+	sym = trussAWT001Connector_4292972204
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292972396
+	partName = StrutConnector
+	pos = -0.07443807,20.04084,0.6322985
+	attPos = 0,0,0
+	attPos0 = 0.3939976,-0.003826141,0.5000003
+	rot = 0.6532815,0.2705981,-0.2705979,0.6532816
+	attRot = -0.7071067,0,0,-0.7071067
+	attRot0 = 0.5000001,0.5000001,-0.4999999,0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_5; pos: -0.8273188,0.3101836,-0.00400363; dir: -0.9363423,0.3510592,-0.004531423
+	sym = trussAWT001Connector_4292984772
+	sym = trussAWT001Connector_4292972588
+	sym = trussAWT001Connector_4292972524
+	sym = trussAWT001Connector_4292972460
+	sym = trussAWT001Connector_4292972332
+	sym = trussAWT001Connector_4292972268
+	sym = trussAWT001Connector_4292972204
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292972332
+	partName = StrutConnector
+	pos = 0.3945145,20.04084,0.5001464
+	attPos = 0,0,0
+	attPos0 = 0.6321521,-0.003826141,0.07495522
+	rot = 0.5000001,0.5000001,-0.5000001,0.4999998
+	attRot = -0.7071067,0,0,-0.7071067
+	attRot0 = 0.2705981,0.6532816,-0.6532815,0.2705979
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_11; pos: -0.1243645,0.04662747,-0.0006027762; dir: -0.9363423,0.3510592,-0.004531423
+	sym = trussAWT001Connector_4292984772
+	sym = trussAWT001Connector_4292972588
+	sym = trussAWT001Connector_4292972524
+	sym = trussAWT001Connector_4292972460
+	sym = trussAWT001Connector_4292972396
+	sym = trussAWT001Connector_4292972268
+	sym = trussAWT001Connector_4292972204
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292972268
+	partName = StrutConnector
+	pos = 0.6326689,20.04084,0.07510155
+	attPos = 0,0,0
+	attPos0 = 0.5000003,-0.003826141,-0.3939976
+	rot = 0.2705982,0.6532816,-0.6532815,0.2705979
+	attRot = -0.7071067,0,0,-0.7071067
+	attRot0 = 8.940697E-08,0.7071068,-0.7071068,-8.940697E-08
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_11; pos: -0.8273188,0.3101836,-0.004003837; dir: -0.9363423,0.3510592,-0.004531423
+	sym = trussAWT001Connector_4292984772
+	sym = trussAWT001Connector_4292972588
+	sym = trussAWT001Connector_4292972524
+	sym = trussAWT001Connector_4292972460
+	sym = trussAWT001Connector_4292972396
+	sym = trussAWT001Connector_4292972332
+	sym = trussAWT001Connector_4292972204
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4292972204
+	partName = StrutConnector
+	pos = 0.5005172,20.04084,-0.3938511
+	attPos = 0,0,0
+	attPos0 = 0.07495505,-0.003826141,-0.632152
+	rot = 2.980232E-08,0.7071068,-0.7071068,-1.788139E-07
+	attRot = -0.7071067,0,0,-0.7071067
+	attRot0 = -0.2705981,0.6532814,-0.6532815,-0.2705982
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel1_17; pos: -0.1243633,0.04662701,-0.0006027464; dir: -0.9363423,0.3510592,-0.004531423
+	sym = trussAWT001Connector_4292984772
+	sym = trussAWT001Connector_4292972588
+	sym = trussAWT001Connector_4292972524
+	sym = trussAWT001Connector_4292972460
+	sym = trussAWT001Connector_4292972396
+	sym = trussAWT001Connector_4292972332
+	sym = trussAWT001Connector_4292972268
+	srfN = srfAttach,structuralPanel1_4293105956
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = NuclearReactor125_4289036050
+	partName = Part
+	pos = 0.0005170107,13.49377,0.0001465678
+	attPos = 0,0,0
+	attPos0 = 0,-1.50625,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0.0003889203
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Brayton1_4289035394
+	attN = top,Brayton1_4289035394
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = InterstellarFissionMSRGC
+		isEnabled = True
+		fuel_mode = 0
+		IsEnabled = False
+		isupgraded = True
+		breedtritium = False
+		last_active_time = 0
+		ongoing_consumption_rate = 0
+		reactorInit = False
+		startDisabled = False
+		EVENTS
+		{
+			SwapFuelMode
+			{
+				active = True
+				guiActive = False
+				guiIcon = Swap Fuel
+				guiName = Swap Fuel
+				category = Swap Fuel
+				guiActiveUnfocused = True
+				unfocusedRange = 3.5
+				externalToEVAOnly = True
+			}
+			EditorSwapFuel
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Swap Fuel
+				guiName = Swap Fuel
+				category = Swap Fuel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ManualRestart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Manual Restart
+				guiName = Manual Restart
+				category = Manual Restart
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			ManualShutdown
+			{
+				active = True
+				guiActive = False
+				guiIcon = Manual Shutdown
+				guiName = Manual Shutdown
+				category = Manual Shutdown
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			Refuel
+			{
+				active = True
+				guiActive = False
+				guiIcon = Refuel
+				guiName = Refuel
+				category = Refuel
+				guiActiveUnfocused = True
+				unfocusedRange = 3.5
+				externalToEVAOnly = True
+			}
+			ActivateReactor
+			{
+				active = False
+				guiActive = True
+				guiIcon = Activate Reactor
+				guiName = Activate Reactor
+				category = Activate Reactor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeactivateReactor
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deactivate Reactor
+				guiName = Deactivate Reactor
+				category = Deactivate Reactor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			BreedTritium
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Tritium Breeding
+				guiName = Enable Tritium Breeding
+				category = Enable Tritium Breeding
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			StopBreedTritium
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable Tritium Breeding
+				guiName = Disable Tritium Breeding
+				category = Disable Tritium Breeding
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RetrofitReactor
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retrofit
+				guiName = Retrofit
+				category = Retrofit
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleWindow
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Control Window
+				guiName = Toggle Control Window
+				category = Toggle Control Window
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateReactorAction
+			{
+				actionGroup = None
+			}
+			DeactivateReactorAction
+			{
+				actionGroup = None
+			}
+			ToggleReactorAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1.25
+		currentScale = 1.25
+		defaultScale = 1.25
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1.5, 1.5, 1.5)
+		DryCost = 12000
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ThermalPower
+		amount = 0
+		maxAmount = 120
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = WasteHeat
+		amount = 0
+		maxAmount = 1200
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = UF4
+		amount = 200
+		maxAmount = 200
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = ThF4
+		amount = 0
+		maxAmount = 200
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Actinides
+		amount = 0
+		maxAmount = 200
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Brayton1_4289035394
+	partName = Part
+	pos = 0.0005170107,14.61877,0.0001465678
+	attPos = 0,0,0
+	attPos0 = 0,1.125,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = structuralPanel2_4289003414
+	attN = top,structuralPanel2_4289003414
+	attN = bottom,NuclearReactor125_4289036050
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FNGenerator
+		isEnabled = True
+		IsEnabled = True
+		generatorInit = False
+		isupgraded = True
+		chargedParticleMode = False
+		EVENTS
+		{
+			ActivateGenerator
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Generator
+				guiName = Activate Generator
+				category = Activate Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeactivateGenerator
+			{
+				active = False
+				guiActive = True
+				guiIcon = Deactivate Generator
+				guiName = Deactivate Generator
+				category = Deactivate Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RetrofitGenerator
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retrofit
+				guiName = Retrofit
+				category = Retrofit
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EditorSwapType
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Swap Type
+				guiName = Swap Type
+				category = Swap Type
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateGeneratorAction
+			{
+				actionGroup = None
+			}
+			DeactivateGeneratorAction
+			{
+				actionGroup = None
+			}
+			ToggleGeneratorAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1.25
+		currentScale = 1.25
+		defaultScale = 1.25
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2000
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Megajoules
+		amount = 0
+		maxAmount = 5000
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 1000
+		maxAmount = 1000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = structuralPanel2_4289003414
+	partName = Part
+	pos = 0.0005170107,15.42033,0.0001465678
+	attPos = 0,0,0
+	attPos0 = 0,0.8118753,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 503.262
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,Brayton1_4289035394
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 187.5
+		currentScale = 187.5
+		defaultScale = 100
+		isFreeScale = True
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 593.262
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 25
+			maxValue = 400
+			incrementLarge = 37.5
+			incrementSmall = 3.75
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort3_4288976388
+	partName = Part
+	pos = -0.940108,13.11877,-0.9404784
+	attPos = 0,0,0
+	attPos0 = -0.940625,-1.88125,-0.940625
+	rot = -1,0,0,0
+	attRot = -0.9999999,0,0,0
+	attRot0 = -1,0,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort3_4288975174
+	partName = Part
+	pos = 0.941142,13.11877,-0.9404784
+	attPos = 0,0,0
+	attPos0 = 0.940625,-1.88125,-0.940625
+	rot = -1,0,0,0
+	attRot = -0.9999999,0,0,0
+	attRot0 = -1,0,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort3_4288974750
+	partName = Part
+	pos = 0.941142,13.11877,0.9407716
+	attPos = 0,0,0
+	attPos0 = 0.940625,-1.88125,0.940625
+	rot = -1,0,0,0
+	attRot = -0.9999999,0,0,0
+	attRot0 = -1,0,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort3_4288974326
+	partName = Part
+	pos = -0.940108,13.11877,0.9407716
+	attPos = 0,0,0
+	attPos0 = -0.940625,-1.88125,0.940625
+	rot = -1,0,0,0
+	attRot = -0.9999999,0,0,0
+	attRot0 = -1,0,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = structuralPanel1_4288822770
+	partName = Part
+	pos = 0.0005170107,15.00002,-1.908603
+	attPos = 0,0,0
+	attPos0 = 0,0,-1.90875
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = 0.7071068,0,0,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = radiator1_4288895334
+	link = trussAWT001Connector_4288700676
+	link = trussAWT001Connector_4288699728
+	attN = top,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 100
+		currentScale = 100
+		defaultScale = 100
+		isFreeScale = True
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 30
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 25
+			maxValue = 400
+			incrementLarge = 37.5
+			incrementSmall = 3.75
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = radiator1_4288895334
+	partName = Part
+	pos = 0.0005170035,14.88504,-2.044752
+	attPos = 0,0,0
+	attPos0 = -7.159542E-09,-0.1361482,0.1149807
+	rot = 0,-0.7071068,0,0.7071068
+	attRot = -0.9999999,0,0,0
+	attRot0 = -0.5,-0.5,0.5,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,structuralPanel1_4288822770
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FNRadiator
+		isEnabled = True
+		radiatorIsEnabled = False
+		isupgraded = True
+		radiatorInit = False
+		EVENTS
+		{
+			DeployRadiator
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy Radiator
+				guiName = Deploy Radiator
+				category = Deploy Radiator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RetractRadiator
+			{
+				active = False
+				guiActive = True
+				guiIcon = Retract Radiator
+				guiName = Retract Radiator
+				category = Retract Radiator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RetrofitRadiator
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retrofit
+				guiName = Retrofit
+				category = Retrofit
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployRadiatorAction
+			{
+				actionGroup = None
+			}
+			RetractRadiatorAction
+			{
+				actionGroup = None
+			}
+			ToggleRadiatorAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1
+		currentScale = 1
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (2, 2, 2)
+		DryCost = 300
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = WasteHeat
+		amount = 0
+		maxAmount = 2500000
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = CM.ALTCM051T1S_4288777054
+	partName = Part
+	pos = -2.165333,15.94065,-0.9404784
+	attPos = 0,0,0
+	attPos0 = -2.16585,0.9406252,-0.940625
+	rot = 0,0,0.7071068,0.7071068
+	attRot = 0,0,0.7071068,0.7071068
+	attRot0 = 0,0,0.7071068,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExWorkshop
+		isEnabled = True
+		lastUpdateString = 0
+		EVENTS
+		{
+			ExDiscoverWorkshops
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+	}
+	MODULE
+	{
+		name = FNSolarPanelWasteHeatModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FNModuleRadiation
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 100
+		maxAmount = 100
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = WasteHeat
+		amount = 0
+		maxAmount = 75
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4288700676
+	partName = StrutConnector
+	pos = -0.499483,14.57829,-1.901614
+	attPos = 0,0,0
+	attPos0 = -0.5,0.006988577,0.421733
+	rot = 0,2.980232E-08,-2.980232E-08,1
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = -0.7071068,0,-4.214685E-08,0.7071068
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: MultitrussALWMG100M3_0; pos: -0.1778747,-0.2861682,0.1362605; dir: -0.4894014,-0.787358,0.3749048
+	sym = trussAWT001Connector_4288699728
+	srfN = srfAttach,structuralPanel1_4288822770
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4288699728
+	partName = StrutConnector
+	pos = 0.500517,14.57829,-1.901614
+	attPos = 0,0,0
+	attPos0 = 0.5,0.006988577,0.421733
+	rot = -2.980233E-08,1,0,-1.390907E-08
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = -1.123823E-08,0.7071068,-0.7071068,-3.090862E-08
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: MultitrussALWMG100M3_0; pos: -0.1778748,-0.2861682,-0.1362607; dir: -0.4894016,-0.787358,-0.374905
+	sym = trussAWT001Connector_4288700676
+	srfN = srfAttach,structuralPanel1_4288822770
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = structuralPanel1_4288699584
+	partName = Part
+	pos = 0.0005170107,15.00002,1.908897
+	attPos = 0,0,0
+	attPos0 = 0,0,1.90875
+	rot = 0,0.7071068,-0.7071068,0
+	attRot = 0,0.7071068,-0.7071068,0
+	attRot0 = 0,0.7071068,-0.7071068,0
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = radiator1_4288699552
+	link = trussAWT001Connector_4288699466
+	link = trussAWT001Connector_4288699402
+	attN = top,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 100
+		currentScale = 100
+		defaultScale = 100
+		isFreeScale = True
+		version = 1.49.0.0
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 30
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 25
+			maxValue = 400
+			incrementLarge = 37.5
+			incrementSmall = 3.75
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = radiator1_4288699552
+	partName = Part
+	pos = 0.0005170179,14.88504,2.045046
+	attPos = 0,0,0
+	attPos0 = -7.159542E-09,-0.1361482,0.1149807
+	rot = 0,0.7071068,0,0.7071068
+	attRot = -0.9999999,0,0,0
+	attRot0 = -0.5,-0.5,0.5,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,structuralPanel1_4288699584
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FNRadiator
+		isEnabled = True
+		radiatorIsEnabled = False
+		isupgraded = True
+		radiatorInit = False
+		EVENTS
+		{
+			DeployRadiator
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy Radiator
+				guiName = Deploy Radiator
+				category = Deploy Radiator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RetractRadiator
+			{
+				active = False
+				guiActive = True
+				guiIcon = Retract Radiator
+				guiName = Retract Radiator
+				category = Retract Radiator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RetrofitRadiator
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retrofit
+				guiName = Retrofit
+				category = Retrofit
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployRadiatorAction
+			{
+				actionGroup = None
+			}
+			RetractRadiatorAction
+			{
+				actionGroup = None
+			}
+			ToggleRadiatorAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		tweakScale = 1
+		currentScale = 1
+		defaultScale = 1
+		isFreeScale = False
+		version = 1.49.0.0
+		defaultTransformScale = (2, 2, 2)
+		DryCost = 300
+		tweakScale_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.625
+			maxValue = 5
+			incrementLarge = 1.25
+			incrementSmall = 0.125
+			incrementSlide = 0.001
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = WasteHeat
+		amount = 0
+		maxAmount = 2500000
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4288699466
+	partName = StrutConnector
+	pos = 0.5005171,14.57829,1.901908
+	attPos = 0,0,0
+	attPos0 = -0.5,0.006988577,0.421733
+	rot = -2.980232E-08,1,0,-2.980232E-08
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = -0.7071068,0,-4.214685E-08,0.7071068
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: MultitrussALWMG100M3_0; pos: -0.177876,-0.2861691,0.1362614; dir: -0.4894014,-0.787358,0.3749048
+	sym = trussAWT001Connector_4288699402
+	srfN = srfAttach,structuralPanel1_4288699584
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4288699402
+	partName = StrutConnector
+	pos = -0.4994831,14.57829,1.901908
+	attPos = 0,0,0
+	attPos0 = 0.5,0.006988577,0.421733
+	rot = 0,-1.390907E-08,2.980233E-08,-1
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = -1.123823E-08,0.7071068,-0.7071068,-3.090862E-08
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: MultitrussALWMG100M3_0; pos: -0.1778761,-0.2861691,-0.1362614; dir: -0.4894016,-0.787358,-0.374905
+	sym = trussAWT001Connector_4288699466
+	srfN = srfAttach,structuralPanel1_4288699584
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4288697626
+	partName = StrutConnector
+	pos = -1.264878,15.9307,-1.265248
+	attPos = 0,0,0
+	attPos0 = -1.265395,0.9306774,-1.265395
+	rot = 4.561941E-08,0.3826834,-1.10135E-07,-0.9238796
+	attRot = 0,0,0,1
+	attRot0 = 4.561941E-08,0.3826834,-1.10135E-07,-0.9238796
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel2_49; pos: -0.7465218,-0.4791153,0.01085868; dir: -0.8415213,-0.5400853,0.01224051
+	sym = trussAWT001Connector_4288697216
+	sym = trussAWT001Connector_4288697152
+	sym = trussAWT001Connector_4288697088
+	srfN = srfAttach,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4288697216
+	partName = StrutConnector
+	pos = -1.264878,15.9307,1.265541
+	attPos = 0,0,0
+	attPos0 = -1.265395,0.9306774,1.265395
+	rot = -4.561941E-08,-0.3826835,-1.10135E-07,-0.9238796
+	attRot = 0,0,0,1
+	attRot0 = -4.561941E-08,-0.3826835,-1.10135E-07,-0.9238796
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel2_49; pos: -0.7465197,-0.4791134,0.01085857; dir: -0.8415213,-0.5400853,0.01224051
+	sym = trussAWT001Connector_4288697626
+	sym = trussAWT001Connector_4288697152
+	sym = trussAWT001Connector_4288697088
+	srfN = srfAttach,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4288697152
+	partName = StrutConnector
+	pos = 1.265912,15.9307,1.265541
+	attPos = 0,0,0
+	attPos0 = 1.265395,0.9306774,1.265394
+	rot = -1.10135E-07,-0.9238796,-4.561941E-08,-0.3826834
+	attRot = 0,0,0,1
+	attRot0 = -1.10135E-07,-0.9238796,-4.561941E-08,-0.3826834
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel2_49; pos: -0.7465197,-0.4791134,0.01085868; dir: -0.8415213,-0.5400853,0.01224051
+	sym = trussAWT001Connector_4288697626
+	sym = trussAWT001Connector_4288697216
+	sym = trussAWT001Connector_4288697088
+	srfN = srfAttach,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussAWT001Connector_4288697088
+	partName = StrutConnector
+	pos = 1.265911,15.9307,-1.265248
+	attPos = 0,0,0
+	attPos0 = 1.265394,0.9306774,-1.265395
+	rot = -1.10135E-07,-0.9238796,4.561941E-08,0.3826835
+	attRot = 0,0,0,1
+	attRot0 = -1.10135E-07,-0.9238796,4.561941E-08,0.3826835
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	cData = tgt: structuralPanel2_49; pos: -0.7465219,-0.4791153,0.0108586; dir: -0.8415213,-0.5400853,0.01224051
+	sym = trussAWT001Connector_4288697626
+	sym = trussAWT001Connector_4288697216
+	sym = trussAWT001Connector_4288697152
+	srfN = srfAttach,MultitrussALWMG100M3_4289097612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
